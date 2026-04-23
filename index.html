@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-sec {
+            background: rgb(48, 46, 46);
+            height: 43px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .logo h2 {
+            margin-left: 10px;
+            font-size: 27px;
+            color: gray;
+        }
+
+        ul {
+            display: flex;
+            gap: 45px;
+            list-style-type: none;
+            margin-left: 100%;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            transition: all 0.3s ease-in;
+        }
+        ul a:hover{
+            color: rgb(250, 28, 28);
+        }
+
+        .searchbar {
+            margin-left: 40%;
+        }
+        .searchbar {
+            display: flex;
+            width: 235px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .searchbar input{
+            border: none;
+            padding: 7px;
+            outline: none;
+        }
+        .btn{
+            border: none;
+            background: rgb(250, 28, 28);
+            padding: 5px 5px;
+            color: white;
+            cursor: pointer;
+        }
+         .icons {
+            display: flex;
+            gap: 13px;
+            margin-left: 94%;
+            position: absolute;
+        }
+        .icons i{
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease-in ;
+        }
+        .icons i:hover{
+            color: rgb(250, 28, 28);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-sec">
+        <section class="container">
+            <div class="logo">
+                <h2>jamsport</h2>
+            </div>
+            <div class="main-nav">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Enter our products" id="search">
+                <button class="btn">Search</button>
+            </div>
+            <div class="icons">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-business-time"></i></a>
+            </div>
+
+        </section>
+
+    </header>
+</body>
+
+</html>
